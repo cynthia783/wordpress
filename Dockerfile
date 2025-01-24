@@ -9,7 +9,7 @@ RUN chown -R www-data:www-data /var/www/html && \
     chmod -R 777 /var/www/html
 
 #Exposer le port 80 pour accéder à WordPress via HTTP
-EXPOSE 80
+EXPOSE 80 
 
 #Démarrer Apache
 CMD ["apache2-foreground"]
